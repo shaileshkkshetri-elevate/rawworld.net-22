@@ -1,0 +1,8 @@
+{
+  "name": "RAW – Revolutionary Agriculture War",
+  "description": "World's First Agriculture Game Reality Show – Official platform celebrating farming heroes, Agritainment, One Tree One Vote climate action, and global expansion.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
