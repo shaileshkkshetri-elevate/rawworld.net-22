@@ -593,16 +593,15 @@ export default function App() {
     <div className="min-h-screen bg-[#060504] text-[#f5ede0] selection:bg-[#d4a234] selection:text-black">
       
       {/* Top Editorial Announcement Bar */}
-      <div className="bg-[#0e0b07] border-b border-[#d4a234]/20 py-2.5 px-4 text-xs font-mono">
+      <div className="bg-[#080604] border-b border-[#d4a234]/20 py-2.5 px-6 text-xs">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5 text-[#dcd0bc] overflow-hidden whitespace-nowrap">
-            <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-            <span className="font-semibold text-[#f3d482] uppercase tracking-wider text-[11px]">
-              Revolutionary Agriculture War
+          <div className="flex items-center gap-3 text-[#dcd0bc] overflow-hidden whitespace-nowrap text-[11px] font-mono tracking-wide">
+            <span className="font-cinzel font-bold text-[#f3d482] tracking-[0.2em] uppercase">
+              RAW
             </span>
-            <span className="text-[#a39780] hidden sm:inline">·</span>
+            <span className="text-[#a39780] hidden sm:inline" aria-hidden="true">/</span>
             <span className="hidden sm:inline text-[#dcd0bc]">World’s First Agriculture Game Reality Show</span>
-            <span className="text-[#a39780] hidden md:inline">·</span>
+            <span className="text-[#a39780] hidden md:inline" aria-hidden="true">/</span>
             <span className="hidden md:inline text-emerald-400 font-semibold">289,973 Verified Trees Planted</span>
           </div>
           <div className="flex items-center gap-2 text-xs shrink-0">
@@ -611,7 +610,7 @@ export default function App() {
               className="text-[#f3d482] hover:text-white transition-colors flex items-center gap-1.5 font-medium underline decoration-[#d4a234]/40 underline-offset-4"
             >
               <Leaf className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Carbon & Soil Sequestration Data</span>
+              <span>Carbon & Soil Sequestration Intelligence</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -619,25 +618,25 @@ export default function App() {
       </div>
 
       {/* Main Sticky Navigation */}
-      <header className="sticky top-0 z-40 bg-[#060504]/90 backdrop-blur-md border-b border-[#d4a234]/15">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <header className="sticky top-0 z-40 bg-[#070605]/92 backdrop-blur-lg border-b border-[#d4a234]/18">
+        <div className="max-w-7xl mx-auto px-6 h-22 flex items-center justify-between">
           
           {/* Brand Wordmark & Logo */}
-          <a href="#top" className="flex items-center gap-3.5 shrink-0 group">
+          <a href="#top" className="flex items-center gap-4 shrink-0 group">
             <img 
               src="/images/raw-logo.png" 
               alt="RAW – Revolutionary Agriculture War" 
               onError={handleImgError}
-              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="hidden lg:flex flex-col border-l border-[#d4a234]/25 pl-3">
-              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#f3d482]">Revolutionary</span>
-              <span className="text-[10px] tracking-[0.18em] uppercase text-[#a39780]">Agriculture War</span>
+            <div className="hidden lg:flex flex-col border-l border-[#d4a234]/25 pl-3.5">
+              <span className="text-[11px] font-cinzel font-bold tracking-[0.25em] uppercase text-[#f3d482]">Revolutionary</span>
+              <span className="text-[9px] font-cinzel tracking-[0.22em] uppercase text-[#a39780]">Agriculture War</span>
             </div>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-xs font-cinzel uppercase tracking-[0.14em]">
             <a href="#concept" className="text-[#dcd0bc] hover:text-[#f3d482] transition-colors py-1">
               The Format
             </a>
@@ -652,7 +651,7 @@ export default function App() {
               Laureates
             </a>
             <a href="#gallery" className="text-[#dcd0bc] hover:text-[#f3d482] transition-colors py-1">
-              Photos (47)
+              Archive (47)
             </a>
             <a href="#team" className="text-[#dcd0bc] hover:text-[#f3d482] transition-colors py-1">
               Leadership
@@ -663,13 +662,13 @@ export default function App() {
           <div className="hidden sm:flex items-center gap-3">
             <a 
               href="#vote" 
-              className="px-3.5 py-2 text-xs font-semibold uppercase tracking-wider text-[#dcd0bc] hover:text-white border border-[#d4a234]/30 rounded-sm hover:border-[#f3d482] transition-colors cursor-pointer"
+              className="px-4 py-2 text-xs font-cinzel uppercase tracking-[0.12em] text-[#dcd0bc] hover:text-white border border-[#d4a234]/30 rounded-xs hover:border-[#f3d482] transition-colors cursor-pointer"
             >
-              Carbon Data
+              Carbon Engine
             </a>
             <a 
               href="#inquire" 
-              className="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#120d04] gold-btn rounded-sm shadow-md transition-all cursor-pointer"
+              className="px-5 py-2.5 text-xs font-cinzel uppercase tracking-[0.14em] text-[#0d0903] gold-btn rounded-xs shadow-md transition-all cursor-pointer font-bold"
             >
               Contact / Inquire
             </a>
@@ -751,7 +750,7 @@ export default function App() {
       </header>
 
       {/* Hero Section – Luminous, Ultra-Cinematic & Photo-Forward */}
-      <section id="top" className="relative min-h-[92svh] flex items-end pt-24 pb-16 overflow-hidden">
+      <section id="top" className="relative min-h-[95svh] flex items-end pt-28 pb-20 overflow-hidden">
         
         {/* Crisp Cinematic Mountain Terrace Photo */}
         <div className="absolute inset-0 z-0">
@@ -762,19 +761,19 @@ export default function App() {
             className="w-full h-full object-cover object-center scale-100"
           />
           {/* Subtle balanced gradient allowing the photography to shine while ensuring text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#060504] via-[#060504]/60 to-black/25 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#060504]/90 via-[#060504]/45 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#060504] via-[#060504]/65 to-black/30 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#060504]/95 via-[#060504]/55 to-transparent pointer-events-none" />
         </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-3xl">
             
             {/* Editorial kicker */}
-            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wider uppercase text-[#f3d482] mb-4">
-              <span className="bg-[#d4a234]/20 border border-[#d4a234]/40 px-2.5 py-0.5 rounded-sm">Agritainment Genre</span>
-              <span aria-hidden="true">·</span>
-              <span>21 Primetime Broadcast Episodes</span>
-              <span aria-hidden="true">·</span>
+            <div className="flex flex-wrap items-center gap-2.5 text-xs font-cinzel font-semibold tracking-[0.2em] uppercase text-[#f3d482] mb-5">
+              <span>World’s First Agritainment Reality Show</span>
+              <span className="text-[#a39780]" aria-hidden="true">·</span>
+              <span>21 Primetime Episodes</span>
+              <span className="text-[#a39780]" aria-hidden="true">·</span>
               <span>77 Districts Represented</span>
             </div>
 
@@ -783,36 +782,36 @@ export default function App() {
               src="/images/raw-logo.png" 
               alt="RAW – Revolutionary Agriculture War" 
               onError={handleImgError}
-              className="w-full max-w-[320px] sm:max-w-[400px] h-auto object-contain mb-6 filter drop-shadow-[0_8px_24px_rgba(0,0,0,0.85)]"
+              className="w-full max-w-[320px] sm:max-w-[420px] h-auto object-contain mb-8 filter drop-shadow-[0_12px_32px_rgba(0,0,0,0.9)]"
             />
 
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-serif text-[#f5ede0] leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-serif text-[#f5ede0] leading-[1.04] tracking-tight mb-6">
               Farmers are the heroes. <br />
-              <span className="gold-gradient-text">Now the world is watching.</span>
+              <span className="gold-foil-text font-serif">Now the world is watching.</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-[#f0e6d6] max-w-2xl font-normal leading-relaxed mb-8 drop-shadow-md">
+            <p className="text-lg sm:text-xl text-[#f0e6d6] max-w-2xl font-normal leading-relaxed mb-10 drop-shadow-md">
               The world’s first agriculture game reality show. Filmed across two full production years in Nepal’s high-altitude mountain terraces, RAW elevates generational farmers alongside agricultural scientists in front of a national audience.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
               <a 
                 href="#vote" 
-                className="px-8 py-3.5 text-sm font-semibold text-[#120d04] gold-btn rounded-sm shadow-[0_4px_24px_rgba(212,162,52,0.35)] flex items-center gap-2.5 cursor-pointer"
+                className="px-8 py-4 text-xs font-cinzel uppercase tracking-[0.14em] text-[#0d0903] gold-btn rounded-xs shadow-[0_4px_24px_rgba(212,162,52,0.35)] flex items-center gap-2.5 cursor-pointer font-bold"
               >
-                <Leaf className="w-4 h-4 text-emerald-950" /> One Tree One Vote Data (289,973 Trees)
+                <Leaf className="w-4 h-4 text-[#0d0903]" /> One Tree One Vote Data (289,973 Trees)
               </a>
 
               <a 
                 href="#concept" 
-                className="px-7 py-3.5 text-sm font-medium text-[#f5ede0] ghost-btn rounded-sm flex items-center gap-2 cursor-pointer backdrop-blur-sm"
+                className="px-7 py-4 text-xs font-cinzel uppercase tracking-[0.14em] text-[#f5ede0] ghost-btn rounded-xs flex items-center gap-2 cursor-pointer backdrop-blur-sm font-semibold"
               >
-                The Show & Arena <ChevronRight className="w-4 h-4" />
+                The Show & Arena <ChevronRight className="w-4 h-4 text-[#f3d482]" />
               </a>
 
               <a 
                 href="#gallery" 
-                className="px-5 py-3.5 text-sm font-medium text-[#f3d482] hover:text-white flex items-center gap-2 cursor-pointer"
+                className="px-5 py-4 text-xs font-cinzel uppercase tracking-[0.12em] text-[#f3d482] hover:text-white flex items-center gap-2 cursor-pointer font-medium"
               >
                 <ImageIcon className="w-4 h-4" /> 47 Production Photos
               </a>
@@ -822,38 +821,38 @@ export default function App() {
       </section>
 
       {/* Verified Production Proof Bar */}
-      <section className="bg-[#0c0a07] border-y border-[#d4a234]/20 py-8 relative z-20">
+      <section className="bg-[#090705] border-y border-[#d4a234]/25 py-10 relative z-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 divide-y sm:divide-y-0 divide-[#d4a234]/15">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-[#d4a234]/20 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-[#f3d482] tabular-nums">1,642</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Contestant Applicants</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Contestant Applicants</div>
             </div>
 
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-[#d4a234]/20 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-[#f3d482] tabular-nums">77</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Districts Represented</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Districts Represented</div>
             </div>
 
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-[#d4a234]/20 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-[#f3d482] tabular-nums">21</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Broadcast Episodes</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Broadcast Episodes</div>
             </div>
 
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-emerald-500/30 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-emerald-400 tabular-nums">289,973</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Trees Planted as Votes</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Trees Planted as Votes</div>
             </div>
 
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-[#d4a234]/20 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-[#f3d482] tabular-nums">103+</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Schools Mobilized</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Schools Mobilized</div>
             </div>
 
-            <div className="pt-4 sm:pt-0">
+            <div className="p-4 bg-[#050403] border border-emerald-500/30 rounded-xs">
               <div className="text-3xl sm:text-4xl font-extrabold font-serif text-emerald-400 tabular-nums">100%</div>
-              <div className="text-xs uppercase tracking-wider text-[#a39780] mt-1 font-medium">Biodegradable Arena</div>
+              <div className="text-[10px] uppercase font-cinzel tracking-[0.14em] text-[#a39780] mt-1 font-semibold">Biodegradable Arena</div>
             </div>
 
           </div>
@@ -1202,12 +1201,12 @@ export default function App() {
                 </div>
 
                 {/* Published Citation Box */}
-                <div className="mt-6 p-4 bg-[#100d07] border-l-2 border-emerald-400 text-xs text-[#dcd0bc] rounded-r-sm">
-                  <div className="flex items-center gap-1.5 font-mono text-[11px] text-emerald-400 uppercase tracking-wider mb-1 font-semibold">
+                <div className="mt-6 p-5 bg-[#0f0c08] border border-emerald-500/25 rounded-xs">
+                  <div className="flex items-center gap-2 font-mono text-[11px] text-emerald-400 uppercase tracking-wider mb-2 font-semibold">
                     <BookOpen className="w-3.5 h-3.5" />
-                    <span>Published Scientific Citation:</span>
+                    <span>Peer-Reviewed Literature Citation:</span>
                   </div>
-                  <p className="italic leading-relaxed font-serif text-[13px] text-[#ece4d4]">
+                  <p className="italic leading-relaxed font-serif text-[13px] text-[#f5ede0]">
                     "{activeTimeline.publishedSource}"
                   </p>
                 </div>
@@ -1669,7 +1668,7 @@ export default function App() {
                     <p className="text-xs text-[#dcd0bc] leading-relaxed">
                       Humanity emits approximately <strong className="text-white">40.0 Gigatons (40 Billion metric tons) of CO₂</strong> per year from industrial activity and fossil energy.
                     </p>
-                    <div className="p-3 bg-[#0d0a06] border-l-2 border-emerald-400 text-xs font-mono text-emerald-300 space-y-1">
+                    <div className="p-4 bg-[#0d0a06] border border-emerald-500/25 rounded-xs text-xs font-mono text-emerald-300 space-y-1">
                       <div>· Current Input: <span className="text-[#f3d482]">{customTreeCount.toLocaleString()} trees</span></div>
                       <div>· Annual Drawdown at Maturity: <span className="text-white">{formatSmartUnit(simMetrics.annualCO2Tons).formatted} {formatSmartUnit(simMetrics.annualCO2Tons).unit}/yr</span></div>
                       <div>· Offsets: <span className="text-emerald-400">{simMetrics.annualEmissionsOffsetPercent.toFixed(4)}%</span> of total annual global human emissions.</div>
@@ -1760,19 +1759,19 @@ export default function App() {
                     <h5>Peer-Reviewed Grounding & Literature Backing</h5>
                   </div>
                   <div className="space-y-3 font-mono text-[11px]">
-                    <div className="p-3 bg-[#0d0a06] border-l-2 border-emerald-400">
+                    <div className="p-4 bg-[#0d0a06] border border-emerald-500/20 rounded-xs">
                       <strong className="text-white block font-serif text-xs mb-0.5">IPCC 2019 Refinement to the 2006 Guidelines for National GHG Inventories</strong>
                       <span className="text-[#a39780]">Volume 4 (AFOLU), Chapter 5: Perennial Agroforestry Tree Biomass & Root-to-Shoot Ratios (0.26–0.35) and default carbon accrual coefficients.</span>
                     </div>
-                    <div className="p-3 bg-[#0d0a06] border-l-2 border-[#f3d482]">
+                    <div className="p-4 bg-[#0d0a06] border border-[#d4a234]/20 rounded-xs">
                       <strong className="text-white block font-serif text-xs mb-0.5">Bastin, Finegold, et al. (Science, 2019) – "The global tree restoration potential"</strong>
                       <span className="text-[#a39780]">Crowther Lab / ETH Zurich study identifying 0.9 billion hectares of degraded global land capable of holding 1.2 trillion trees storing 205 Gigatons of carbon without competing with human agriculture or urban zones.</span>
                     </div>
-                    <div className="p-3 bg-[#0d0a06] border-l-2 border-emerald-400">
+                    <div className="p-4 bg-[#0d0a06] border border-emerald-500/20 rounded-xs">
                       <strong className="text-white block font-serif text-xs mb-0.5">ICIMOD Field Trials (Nepal Mid-Hills Watersheds)</strong>
                       <span className="text-[#a39780]">Documented 2.65 metric tons C/ha/year soil accrual and 42%–68% reduction in monsoon slope topsoil runoff under community terrace agroforestry systems.</span>
                     </div>
-                    <div className="p-3 bg-[#0d0a06] border-l-2 border-[#f3d482]">
+                    <div className="p-4 bg-[#0d0a06] border border-[#d4a234]/20 rounded-xs">
                       <strong className="text-white block font-serif text-xs mb-0.5">FAO & World Agroforestry Centre (ICRAF)</strong>
                       <span className="text-[#a39780]">State of the World's Forests (2022): Confirmed +34% average topsoil organic carbon (SOC) elevation in multi-strata food agroforestry compared to mono-crop baselines.</span>
                     </div>
